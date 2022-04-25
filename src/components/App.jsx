@@ -20,6 +20,7 @@ export const App = () => {
     const parsedContacts = JSON.parse(lsContacts);
 
     parsedContacts ? setContacts(parsedContacts) : setContacts(contacts)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   
   useEffect(() => {
